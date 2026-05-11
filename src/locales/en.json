@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "games": "Dimensions",
+    "tech": "Technology",
+    "about": "About Us",
+    "cta": "Collaborate"
+  },
+  "hero": {
+    "title": "Codename: Butterfly",
+    "subtitle": "The First AI-Driven Live-Action Interactive Cinematic Game",
+    "btn_reserve": "Pre-register Now",
+    "btn_trailer": "Watch Trailer"
+  },
+  "projects": {
+    "title": "Dream Dimensions",
+    "subtitle": "AI-Driven Interactive Cinematic Universe",
+    "die_ying": "Codename: Butterfly",
+    "die_ying_desc": "Live-Action Interactive / Suspense / Sci-Fi",
+    "status_live": "Pre-registering",
+    "status_soon": "Coming Soon",
+    "placeholder_desc": "Genre TBD / Deep AI Integration",
+    "placeholder_desc_beta": "Genre TBD / Rapid Iteration"
+  },
+  "tech": {
+    "title": "Core Technology",
+    "subtitle": "Dual-Driven AI Native Productivity",
+    "vigen": {
+      "title": "AI Video Generation",
+      "desc": "Based on neural rendering and cross-modal generation technologies, we are pioneering a new era of hyper-realism in interactive cinema. We deconstruct the space-time chains of traditional filming, allowing every pixel to carry boundless imagination."
+    },
+    "codegen": {
+      "title": "AI Intelligent Code",
+      "desc": "Reshaping game underlying logic with intelligent algorithms to build an AI Native agile architecture. Breaking the physical cycle of traditional development, achieving adaptive construction of complex interactive systems, and creating highly dynamic free interactive experiences. Our code is not just instructions, but a wisdom hub driving the real-time evolution of the game world."
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "AI Native Future Dreamweavers",
+    "p1": "We are an innovative interactive cinematic studio born in the era of AI explosion. We firmly believe that the evolution of technology will ultimately break the physical boundaries of creativity.",
+    "p2": "Relying on the most cutting-edge neural rendering and intelligent code generation technologies, we are committed to creating unprecedented hyper-realism interactive cinematic experiences. Here, code is not just cold instructions, but a wisdom hub driving the real-time evolution of the world; imagery is no longer limited by filming costs and space-time chains, and every pixel carries boundless imagination.",
+    "p3": "Our mission: To maintain ultra-high iteration speed with minimal human cost, continuously producing interactive cinematic masterpieces with film-level visual quality and deep interactivity. We are not just developing games; we are building a whole new dimension connecting reality and dreams."
+  },
+  "detail": {
+    "title": "Codename: Butterfly",
+    "subtitle": "A Suspenseful Interactive Cinematic Experience Spanning Time and Space",
+    "back": "← Back to Home",
+    "intro_title": "Synopsis",
+    "intro_desc": "In the near future, human memories can be digitally stored and modified. An agent codenamed 'Butterfly', during a memory extraction mission, accidentally discovers her erased true identity... Players will determine Butterfly's fate through every choice and uncover the shocking conspiracy hidden behind the neon city.",
+    "char_title": "Character Setting",
+    "char_butterfly": "Butterfly",
+    "char_butterfly_desc": "Cold, decisive, with extremely high combat and hacking skills. In the process of searching for true memories, she reveals a fragile yet determined side.",
+    "char_zero": "Lin Ling",
+    "char_zero_desc": "A mysterious informant who seems to hold the key clues to Butterfly's past. Both righteous and evil, his identity is a mystery.",
+    "tech_title": "Technical Presentation",
+    "tech_desc": "This work is entirely based on our self-developed neural rendering technology. All scenes and character facial details are generated and driven by AI, providing you with the ultimate immersive visual experience and a thousand-faced interactive plot."
+  }
+}

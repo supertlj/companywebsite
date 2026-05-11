@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './Header.css';
 
 const Header = () => {
+  const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -24,19 +26,19 @@ const Header = () => {
 
       {/* 导航菜单 */}
       <nav className={`nav ${isMenuOpen ? 'nav-active' : ''}`}>
-        <a href="/#games" onClick={() => setIsMenuOpen(false)}>造梦维度</a>
-        <a href="/#tech" onClick={() => setIsMenuOpen(false)}>核心技术</a>
-        <Link to="/about" onClick={() => setIsMenuOpen(false)}>关于我们</Link>
+        <a href="/#games" onClick={() => setIsMenuOpen(false)}>{t('nav.games')}</a>
+        <a href="/#tech" onClick={() => setIsMenuOpen(false)}>{t('nav.tech')}</a>
+        <Link to="/about" onClick={() => setIsMenuOpen(false)}>{t('nav.about')}</Link>
         
         {/* 移动端菜单内嵌的按钮 */}
         <div className="nav-cta" onClick={() => setIsMenuOpen(false)}>
-          <button className="btn-primary">联系合作</button>
+          <button className="btn-primary">{t('nav.cta')}</button>
         </div>
       </nav>
 
       {/* 桌面端独立的按钮 */}
       <div className="cta">
-        <button className="btn-primary">联系合作</button>
+        <button className="btn-primary">{t('nav.cta')}</button>
       </div>
     </header>
   );

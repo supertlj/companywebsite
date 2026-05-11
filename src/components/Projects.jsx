@@ -1,14 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import './Projects.css';
 import project1 from '../assets/hero-bg.png'; // 复用 Hero 背景图作为第一个项目的封面
 
 const Projects = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="games" className="projects-section">
-      <h2 className="section-title text-gradient">造梦维度</h2>
-      <p className="section-subtitle">AI 驱动的互动影像宇宙</p>
+      <h2 className="section-title text-gradient">{t('projects.title')}</h2>
+      <p className="section-subtitle">{t('projects.subtitle')}</p>
       
       <div className="projects-grid">
         {/* 第一个项目：代号蝶影 */}
@@ -23,9 +26,9 @@ const Projects = () => {
           <Link to="/project/die-ying" style={{ display: 'flex', flexDirection: 'column', height: '100%', textDecoration: 'none' }}>
             <div className="project-image" style={{ backgroundImage: `url(${project1})` }}></div>
             <div className="project-info">
-              <h3>代号：蝶影</h3>
-              <p>真人互动影像 / 悬疑 / 科幻</p>
-              <span className="status status-live">预约中</span>
+              <h3>{t('projects.die_ying')}</h3>
+              <p>{t('projects.die_ying_desc')}</p>
+              <span className="status status-live">{t('projects.status_live')}</span>
             </div>
           </Link>
         </motion.div>
@@ -44,8 +47,8 @@ const Projects = () => {
           </div>
           <div className="project-info">
             <h3>Project Alpha</h3>
-            <p>题材待定 / AI 深度参与</p>
-            <span className="status status-soon">Coming Soon</span>
+            <p>{t('projects.placeholder_desc')}</p>
+            <span className="status status-soon">{t('projects.status_soon')}</span>
           </div>
         </motion.div>
 
@@ -63,8 +66,8 @@ const Projects = () => {
           </div>
           <div className="project-info">
             <h3>Project Beta</h3>
-            <p>题材待定 / 快速迭代</p>
-            <span className="status status-soon">Coming Soon</span>
+            <p>{t('projects.placeholder_desc_beta')}</p>
+            <span className="status status-soon">{t('projects.status_soon')}</span>
           </div>
         </motion.div>
       </div>

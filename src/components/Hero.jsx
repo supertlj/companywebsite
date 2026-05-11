@@ -1,9 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import './Hero.css';
 import heroBg from '../assets/fmv_hero_bg.png'; // 使用全新的电影感大图
 
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <section className="hero">
       {/* 独立的背景层，用于应用缩放动效 */}
@@ -17,7 +19,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          代号：蝶影
+          {t('hero.title')}
         </motion.h1>
         
         <motion.p 
@@ -26,7 +28,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
-          首款 AI 驱动真人互动影像游戏
+          {t('hero.subtitle')}
         </motion.p>
         
         <motion.div 
@@ -35,8 +37,8 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
         >
-          <button className="btn-primary">立即预约</button>
-          <button className="btn-secondary">查看预告片</button>
+          <button className="btn-primary">{t('hero.btn_reserve')}</button>
+          <button className="btn-secondary">{t('hero.btn_trailer')}</button>
         </motion.div>
       </div>
     </section>
