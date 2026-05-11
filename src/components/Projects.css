@@ -28,11 +28,10 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: var(--transition-smooth);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
   border-color: var(--accent-primary);
   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }

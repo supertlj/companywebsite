@@ -16,6 +16,7 @@ const Projects = () => {
           className="project-card glass"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
+          whileHover={{ y: -5 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
@@ -34,6 +35,7 @@ const Projects = () => {
           className="project-card glass placeholder"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
+          whileHover={{ y: -5 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
@@ -52,6 +54,7 @@ const Projects = () => {
           className="project-card glass placeholder"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
+          whileHover={{ y: -5 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >

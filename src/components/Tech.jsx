@@ -14,6 +14,7 @@ const Tech = () => {
           className="tech-card glass"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
+          whileHover={{ y: -5 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
@@ -28,6 +29,7 @@ const Tech = () => {
           className="tech-card glass"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
+          whileHover={{ y: -5 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         >
