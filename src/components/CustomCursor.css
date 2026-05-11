@@ -1,0 +1,64 @@
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s linear, opacity 0.3s ease;
+}
+
+.cursor-hidden {
+  opacity: 0;
+}
+
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--accent-secondary);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-ring {
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--accent-primary);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.cursor-clicked .cursor-ring {
+  width: 20px;
+  height: 20px;
+  border-color: var(--accent-secondary);
+}
+
+.cursor-link-hovered .cursor-ring {
+  width: 50px;
+  height: 50px;
+  border-color: var(--accent-secondary);
+  background-color: hsla(190, 100%, 50%, 0.1);
+}
+
+/* 仅在桌面端隐藏默认光标并启用自定义光标 */
+@media (min-width: 769px) {
+  body {
+    cursor: none;
+  }
+  a, button {
+    cursor: none;
+  }
+}
+
+/* 移动端不显示自定义光标 */
+@media (max-width: 768px) {
+  .custom-cursor {
+    display: none;
+  }
+}

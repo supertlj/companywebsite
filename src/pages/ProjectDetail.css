@@ -1,0 +1,128 @@
+.project-detail-page {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.back-nav {
+  position: fixed;
+  top: 80px;
+  left: 2rem;
+  z-index: 1001;
+}
+
+.back-nav a {
+  color: var(--text-secondary);
+  font-weight: 600;
+  background: var(--surface);
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--surface-border);
+  backdrop-filter: var(--glass-blur);
+  transition: var(--transition-smooth);
+}
+
+.back-nav a:hover {
+  color: var(--accent-secondary);
+  border-color: var(--accent-secondary);
+  transform: translateX(-5px);
+}
+
+.detail-hero {
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.detail-hero .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(5, 5, 10, 0.3) 0%, rgba(5, 5, 10, 0.9) 100%);
+  z-index: 1;
+}
+
+.detail-hero .hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.detail-content {
+  max-width: 800px;
+  margin: -50px auto 5rem;
+  padding: 3rem;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.content-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  background: var(--gradient-glow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.content-section p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.characters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.char-card {
+  background: hsla(230, 25%, 10%, 0.5);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--surface-border);
+  transition: var(--transition-smooth);
+}
+
+.char-card:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-3px);
+}
+
+.char-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--text-primary);
+  font-size: 1.2rem;
+}
+
+.char-card p {
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .detail-content {
+    margin: -20px 1rem 5rem;
+    padding: 1.5rem;
+  }
+  .detail-hero {
+    height: 40vh;
+  }
+  .back-nav {
+    top: auto;
+    bottom: 20px;
+    left: 1rem;
+  }
+}
