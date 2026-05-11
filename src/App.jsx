@@ -6,11 +6,13 @@ import Home from './pages/Home';
 import ProjectDetail from './pages/ProjectDetail';
 import About from './pages/About';
 import CustomCursor from './components/CustomCursor';
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="app-container">
         <CustomCursor />
         <div className="glow-bg">

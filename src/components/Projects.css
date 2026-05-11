@@ -37,9 +37,9 @@
 }
 
 .project-image {
-  height: 220px;
+  aspect-ratio: 16 / 9;
   background-size: cover;
-  background-position: center;
+  background-position: center 15%;
 }
 
 .placeholder-bg {
