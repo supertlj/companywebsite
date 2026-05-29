@@ -53,5 +53,11 @@
     "char_zero_desc": "A mysterious informant who seems to hold the key clues to Butterfly's past. Both righteous and evil, his identity is a mystery.",
     "tech_title": "Technical Presentation",
     "tech_desc": "This work is entirely based on our self-developed neural rendering technology. All scenes and character facial details are generated and driven by AI, providing you with the ultimate immersive visual experience and a thousand-faced interactive plot."
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "games": "Projects",
+    "tech": "Technology",
+    "about": "About"
   }
 }
