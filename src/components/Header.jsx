@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className="header glass">
       <Link to="/" className="logo" onClick={() => setIsMenuOpen(false)}>
-        <span className="text-gradient">AI</span> Vision
+        <span className="text-gradient">TLJ</span> Games
       </Link>
       
       {/* 汉堡菜单图标 */}

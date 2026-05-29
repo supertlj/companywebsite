@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>&copy; 2026 AI Vision Studio. 保留所有权利。</p>
+        <p>&copy; 2026 TLJ Games Studio. 保留所有权利。</p>
         <div className="footer-links">
           <a href="#games">项目</a>
           <a href="#tech">技术</a>
